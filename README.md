@@ -1,4 +1,4 @@
-# 🕵️ Credit Card Fraud Detection System
+#  Credit Card Fraud Detection System
 
 A comprehensive machine learning system for detecting fraudulent credit card transactions using advanced algorithms and ensemble methods.
 
@@ -6,7 +6,7 @@ A comprehensive machine learning system for detecting fraudulent credit card tra
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0%2B-orange)](https://scikit-learn.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## 📋 Table of Contents
+##  Table of Contents
 - [Overview](#overview)
 - [Features](#features)
 - [Dataset](#dataset)
@@ -20,7 +20,7 @@ A comprehensive machine learning system for detecting fraudulent credit card tra
 - [Contributing](#contributing)
 - [License](#license)
 
-## 🎯 Overview
+##  Overview
 
 This project implements a sophisticated fraud detection system using multiple machine learning algorithms to identify fraudulent credit card transactions. The system addresses the challenge of highly imbalanced datasets and provides comprehensive model evaluation with business impact analysis.
 
@@ -30,32 +30,32 @@ This project implements a sophisticated fraud detection system using multiple ma
 - **91%+ Fraud Detection Rate** with minimal false positives
 - **Real-time Prediction Capability** for new transactions
 
-## ✨ Features
+##  Features
 
-### 🤖 Machine Learning Models
+###  Machine Learning Models
 - **9 Different Algorithms**: Logistic Regression, Random Forest, Gradient Boosting, XGBoost, SVM, Neural Networks, Decision Trees, Naive Bayes, K-Nearest Neighbors
 - **Ensemble Methods**: Voting classifier combining top-performing models
 - **Cross-Validation**: 5-fold stratified cross-validation for robust evaluation
 
-### 📊 Data Processing
+###  Data Processing
 - **Class Imbalance Handling**: SMOTE, Random Undersampling, SMOTE-Tomek
 - **Feature Scaling**: StandardScaler and RobustScaler options
 - **Data Validation**: Comprehensive data quality checks
 - **Missing Value Handling**: Automated detection and handling
 
-### 📈 Visualization & Analysis
+### Visualization & Analysis
 - **9 Comprehensive Charts**: Performance comparison, ROC curves, confusion matrices
 - **Feature Importance Analysis**: Top contributing features identification
 - **Business Impact Metrics**: Cost-benefit analysis and financial impact
 - **Interactive Visualizations**: Model comparison and performance tracking
 
-### 🎮 User Interface
+###  User Interface
 - **Interactive Menu System**: Easy-to-use command-line interface
 - **Multiple Analysis Modes**: Quick overview, complete analysis, custom settings
 - **Real-time Prediction**: Test individual transactions
 - **Export Functionality**: Save processed data and results
 
-## 📊 Dataset
+##  Dataset
 
 The system uses the **Credit Card Fraud Detection Dataset** containing:
 - **284,807 transactions** over 2 days
@@ -69,38 +69,7 @@ The system uses the **Credit Card Fraud Detection Dataset** containing:
 - **Time Period**: 48 hours of transactions
 - **Missing Values**: None
 
-## 🚀 Installation
 
-### Prerequisites
-- Python 3.8 or higher
-- pip package manager
-
-### Step 1: Clone Repository
-```bash
-git clone https://github.com/yourusername/credit-card-fraud-detection.git
-cd credit-card-fraud-detection
-```
-
-### Step 2: Create Virtual Environment
-```bash
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-### Step 3: Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### Step 4: Download Dataset
-Download `creditcard.csv` and place it in the project root directory.
-
-## 💻 Usage
-
-### Quick Start
-```bash
-python main_fraud_detection.py
-```
 
 ### Interactive Menu Options
 1. **Complete Analysis** - Full pipeline with all models
@@ -139,22 +108,22 @@ prediction = detector.predict_new_transaction(transaction_data)
 
 ### Model Descriptions
 
-#### 🌳 Random Forest
+####  Random Forest
 - **Strengths**: Handles feature interactions, provides feature importance
 - **Use Case**: Robust baseline with interpretable results
 - **Performance**: Consistently high accuracy with low overfitting
 
-#### ⚡ XGBoost
+####  XGBoost
 - **Strengths**: Gradient boosting optimization, handles imbalanced data
 - **Use Case**: Maximum performance for complex patterns
 - **Performance**: Superior ROC-AUC scores
 
-#### 🎭 Ensemble Model
+####  Ensemble Model
 - **Strengths**: Combines best aspects of multiple models
 - **Use Case**: Production deployment for maximum reliability
 - **Performance**: Highest overall metrics
 
-## 📈 Results
+## Results
 
 ### Model Performance
 - **Best ROC-AUC**: 0.9863 (Ensemble Model)
@@ -242,7 +211,7 @@ ensemble = VotingClassifier(estimators=top_models, voting='soft')
 - **Cross-Validation**: 5-fold stratified validation
 - **Business Metrics**: Cost-benefit analysis
 
-## 💰 Business Impact
+##  Business Impact
 
 ### Financial Analysis
 - **Average Fraud Amount**: $122.21
@@ -259,12 +228,12 @@ ensemble = VotingClassifier(estimators=top_models, voting='soft')
 ### Key Performance Indicators
 | Metric | Target | Achieved | Status |
 |--------|--------|----------|---------|
-| Detection Rate | >85% | 91.8% | ✅ Exceeded |
-| False Positive Rate | <5% | 2.4% | ✅ Exceeded |
-| Processing Time | <5s | <2s | ✅ Exceeded |
-| Model Accuracy | >95% | 97.4% | ✅ Exceeded |
+| Detection Rate | >85% | 91.8% |  Exceeded |
+| False Positive Rate | <5% | 2.4% |  Exceeded |
+| Processing Time | <5s | <2s |  Exceeded |
+| Model Accuracy | >95% | 97.4% |  Exceeded |
 
-## 🛠️ Advanced Features
+##  Advanced Features
 
 ### Hyperparameter Optimization
 - **Grid Search**: Automated parameter tuning
@@ -283,7 +252,7 @@ ensemble = VotingClassifier(estimators=top_models, voting='soft')
 - **Monitoring**: Model drift detection
 - **Logging**: Comprehensive audit trails
 
-## 📊 Performance Monitoring
+##  Performance Monitoring
 
 ### Model Drift Detection
 - **Statistical Tests**: KS-test, PSI monitoring
@@ -297,7 +266,7 @@ ensemble = VotingClassifier(estimators=top_models, voting='soft')
 - **Accuracy**: Continuous accuracy monitoring
 - **Resource Usage**: CPU and memory utilization
 
-## 🔄 Continuous Integration
+##  Continuous Integration
 
 ### Testing Framework
 ```bash
@@ -317,71 +286,21 @@ python -m pytest tests/test_performance.py
 - **Type Hints**: Full type annotation
 - **Documentation**: Comprehensive docstrings
 
-## 🚀 Deployment Options
 
-### Local Deployment
-```bash
-python main_fraud_detection.py
-```
-
-### Docker Deployment
-```bash
-docker build -t fraud-detection .
-docker run -p 8000:8000 fraud-detection
-```
-
-### Cloud Deployment
-- **AWS**: SageMaker, Lambda integration
-- **GCP**: AI Platform deployment
-- **Azure**: Machine Learning Studio
-
-## 📚 Dependencies
-
-```txt
-pandas>=1.3.0
-numpy>=1.21.0
-scikit-learn>=1.0.0
-matplotlib>=3.4.0
-seaborn>=0.11.0
-imbalanced-learn>=0.8.0
-xgboost>=1.5.0
-```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open Pull Request
-
-### Development Setup
-```bash
-# Install development dependencies
-pip install -r requirements-dev.txt
-
-# Run tests
-python -m pytest
-
-# Code formatting
-black src/
-flake8 src/
-```
-
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Dataset**: Kaggle Credit Card Fraud Detection Dataset
 - **Libraries**: scikit-learn, pandas, matplotlib communities
 - **Research**: Based on academic fraud detection research
 - **Inspiration**: Real-world financial security challenges
 
-## 📞 Contact
+##  Contact
 
-**Your Name** - your.email@example.com
+Debashrestha Nandi - deb86011@gmail.com
 
 Project Link: [https://github.com/yourusername/credit-card-fraud-detection](https://github.com/yourusername/credit-card-fraud-detection)
 
@@ -394,17 +313,17 @@ Project Link: [https://github.com/yourusername/credit-card-fraud-detection](http
 ## 📋 Changelog
 
 ### v2.0.0 (Latest)
-- ✅ Added ensemble methods
-- ✅ Implemented SMOTE balancing
-- ✅ Enhanced visualization suite
-- ✅ Added business impact analysis
+-  Added ensemble methods
+- Implemented SMOTE balancing
+-  Enhanced visualization suite
+-  Added business impact analysis
 
 ### v1.5.0
-- ✅ XGBoost integration
-- ✅ Interactive menu system
-- ✅ Model export functionality
+- XGBoost integration
+- Interactive menu system
+-  Model export functionality
 
 ### v1.0.0
-- ✅ Initial release
-- ✅ Basic ML models
-- ✅ Core functionality
+-  Initial release
+-  Basic ML models
+- Core functionality
